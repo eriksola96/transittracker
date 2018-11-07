@@ -1,4 +1,4 @@
-zappa-settings.json
+zappa_settings.json
 __pycache__/
 *.py[cod]
 *$py.class
