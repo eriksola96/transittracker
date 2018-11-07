@@ -1,0 +1,4 @@
+aws-cli
+flask-ask
+zappa
+requests
