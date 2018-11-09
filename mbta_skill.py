@@ -8,7 +8,7 @@ from flask import Flask, render_template
 from flask_ask import Ask, statement
 
 MBTAENDPOINT = 'https://api-v3.mbta.com/{}'
-KEY = { 'api_key' : config.api_key }
+KEY = { 'api_key': config.api_key }
 translate = yaml.load(open('config/translations.yml'))
 
 app = Flask(__name__)
@@ -22,7 +22,7 @@ def launch():
 
 @ask.intent('GetAlertForColorIntent', convert={'color': 'color'})
 def get_alerts(color):
-    alerts_data = alerts_present(color)
+    alerts_data = get_alerts_present(color)
     if len(alerts_data) == 1:
         cause = alerts_data[0]['attributes']['cause']
         effect = alerts_data[0]['attributes']['effect']
@@ -47,7 +47,7 @@ def parse_multiple_alerts(alerts):
     return speech_output
 
 
-def alerts_present(color):
+def get_alerts_present(color):
     alerts_endpoint = MBTAENDPOINT.format('alerts/?filter[route]=' + str(color).capitalize())
     r = requests.get(alerts_endpoint, data=KEY)
     res = json.loads(r.text)
