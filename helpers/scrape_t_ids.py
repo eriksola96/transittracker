@@ -14,15 +14,16 @@ def get_stop_ids():
     res = json.loads(r.text)
     return res['data']
 
-
 def parse_name_and_ids(all_t_stations):
     # Dictionary of name, id pairs for every T Subway Station
     t_names_and_ids = {}
     for station in all_t_stations:
         station_name = station['attributes']['name']
         station_id = station['id']
+        station_string_id = station['relationships']['parent_station']['data']['id']
         if station_name not in t_names_and_ids:
-            t_names_and_ids[station_name] = [station_id]
+            station_info = [station_id, station_string_id]
+            t_names_and_ids[station_name] = station_info
         else:
             t_names_and_ids[station_name].append(station_id)
     return t_names_and_ids

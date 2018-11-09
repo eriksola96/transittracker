@@ -1,155 +1,206 @@
 Airport:
 - '70048'
+- place-aport
 - '70047'
 Alewife:
 - '70061'
+- place-alfcl
 Andrew:
 - '70083'
+- place-andrw
 - '70084'
 Aquarium:
 - '70044'
+- place-aqucl
 - '70043'
 Ashmont:
 - '70093'
+- place-asmnl
 - '70094'
 Assembly:
 - '70278'
+- place-astao
 - '70279'
 Back Bay:
 - '70015'
+- place-bbsta
 - '70014'
 Beachmont:
 - '70055'
+- place-bmmnl
 - '70056'
 Bowdoin:
 - '70038'
+- place-bomnl
 - '70838'
 Braintree:
 - '70105'
+- place-brntn
 Broadway:
 - '70081'
+- place-brdwy
 - '70082'
 Central:
 - '70069'
+- place-cntsq
 - '70070'
 Charles/MGH:
 - '70074'
+- place-chmnl
 - '70073'
 Chinatown:
 - '70019'
+- place-chncl
 - '70018'
 Community College:
 - '70029'
+- place-ccmnl
 - '70028'
 Davis:
 - '70063'
+- place-davis
 - '70064'
 Downtown Crossing:
 - '70077'
+- place-dwnxg
 - '70021'
 - '70078'
 - '70020'
 Fields Corner:
 - '70090'
+- place-fldcr
 - '70089'
 Forest Hills:
 - '70001'
+- place-forhl
 Government Center:
 - '70039'
+- place-gover
 - '70040'
 Green Street:
 - '70003'
+- place-grnst
 - '70002'
 Harvard:
 - '70067'
+- place-harsq
 - '70068'
 Haymarket:
 - '70024'
+- place-haecl
 - '70025'
 JFK/UMass:
 - '70096'
+- place-jfk
 - '70086'
 - '70095'
 - '70085'
 Jackson Square:
 - '70007'
+- place-jaksn
 - '70006'
 Kendall/MIT:
 - '70072'
+- place-knncl
 - '70071'
 Malden Center:
 - '70035'
+- place-mlmnl
 - '70034'
 Massachusetts Avenue:
 - '70013'
+- place-masta
 - '70012'
 Maverick:
 - '70045'
+- place-mvbcl
 - '70046'
 North Quincy:
 - '70098'
+- place-nqncy
 - '70097'
 North Station:
 - '70027'
+- place-north
 - '70026'
 Oak Grove:
 - '70036'
+- place-ogmnl
 Orient Heights:
 - '70051'
+- place-orhte
 - '70052'
 Park Street:
 - '70076'
+- place-pktrm
 - '70075'
 Porter:
 - '70066'
+- place-portr
 - '70065'
 Quincy Adams:
 - '70104'
+- place-qamnl
 - '70103'
 Quincy Center:
 - '70102'
+- place-qnctr
 - '70101'
 Revere Beach:
 - '70057'
+- place-rbmnl
 - '70058'
 Roxbury Crossing:
 - '70009'
+- place-rcmnl
 - '70008'
 Ruggles:
 - '70010'
+- place-rugg
 - '70011'
 Savin Hill:
 - '70087'
+- place-shmnl
 - '70088'
 Shawmut:
 - '70091'
+- place-smmnl
 - '70092'
 South Station:
 - '70079'
+- place-sstat
 - '70080'
 State Street:
 - '70041'
+- place-state
 - '70042'
 - '70022'
 - '70023'
 Stony Brook:
 - '70005'
+- place-sbmnl
 - '70004'
 Suffolk Downs:
 - '70054'
+- place-sdmnl
 - '70053'
 Sullivan Square:
 - '70030'
+- place-sull
 - '70031'
 Tufts Medical Center:
 - '70017'
+- place-tumnl
 - '70016'
 Wellington:
 - '70032'
+- place-welln
 - '70033'
 Wonderland:
 - '70059'
+- place-wondl
 - '70060'
 Wood Island:
 - '70050'
+- place-wimnl
 - '70049'
