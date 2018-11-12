@@ -1,206 +1,206 @@
-Airport:
+AIRPORT:
 - '70048'
 - place-aport
 - '70047'
-Alewife:
+ALEWIFE:
 - '70061'
 - place-alfcl
-Andrew:
+ANDREW:
 - '70083'
 - place-andrw
 - '70084'
-Aquarium:
+AQUARIUM:
 - '70044'
 - place-aqucl
 - '70043'
-Ashmont:
+ASHMONT:
 - '70093'
 - place-asmnl
 - '70094'
-Assembly:
+ASSEMBLY:
 - '70278'
 - place-astao
 - '70279'
-Back Bay:
+BACK BAY:
 - '70015'
 - place-bbsta
 - '70014'
-Beachmont:
+BEACHMONT:
 - '70055'
 - place-bmmnl
 - '70056'
-Bowdoin:
+BOWDOIN:
 - '70038'
 - place-bomnl
 - '70838'
-Braintree:
+BRAINTREE:
 - '70105'
 - place-brntn
-Broadway:
+BROADWAY:
 - '70081'
 - place-brdwy
 - '70082'
-Central:
+CENTRAL:
 - '70069'
 - place-cntsq
 - '70070'
-Charles/MGH:
+CHARLES/MGH:
 - '70074'
 - place-chmnl
 - '70073'
-Chinatown:
+CHINATOWN:
 - '70019'
 - place-chncl
 - '70018'
-Community College:
+COMMUNITY COLLEGE:
 - '70029'
 - place-ccmnl
 - '70028'
-Davis:
+DAVIS:
 - '70063'
 - place-davis
 - '70064'
-Downtown Crossing:
+DOWNTOWN CROSSING:
 - '70077'
 - place-dwnxg
 - '70021'
 - '70078'
 - '70020'
-Fields Corner:
+FIELDS CORNER:
 - '70090'
 - place-fldcr
 - '70089'
-Forest Hills:
+FOREST HILLS:
 - '70001'
 - place-forhl
-Government Center:
+GOVERNMENT CENTER:
 - '70039'
 - place-gover
 - '70040'
-Green Street:
+GREEN STREET:
 - '70003'
 - place-grnst
 - '70002'
-Harvard:
+HARVARD:
 - '70067'
 - place-harsq
 - '70068'
-Haymarket:
+HAYMARKET:
 - '70024'
 - place-haecl
 - '70025'
-JFK/UMass:
+JACKSON SQUARE:
+- '70007'
+- place-jaksn
+- '70006'
+JFK/UMASS:
 - '70096'
 - place-jfk
 - '70086'
 - '70095'
 - '70085'
-Jackson Square:
-- '70007'
-- place-jaksn
-- '70006'
-Kendall/MIT:
+KENDALL/MIT:
 - '70072'
 - place-knncl
 - '70071'
-Malden Center:
+MALDEN CENTER:
 - '70035'
 - place-mlmnl
 - '70034'
-Massachusetts Avenue:
+MASSACHUSETTS AVENUE:
 - '70013'
 - place-masta
 - '70012'
-Maverick:
+MAVERICK:
 - '70045'
 - place-mvbcl
 - '70046'
-North Quincy:
+NORTH QUINCY:
 - '70098'
 - place-nqncy
 - '70097'
-North Station:
+NORTH STATION:
 - '70027'
 - place-north
 - '70026'
-Oak Grove:
+OAK GROVE:
 - '70036'
 - place-ogmnl
-Orient Heights:
+ORIENT HEIGHTS:
 - '70051'
 - place-orhte
 - '70052'
-Park Street:
+PARK STREET:
 - '70076'
 - place-pktrm
 - '70075'
-Porter:
+PORTER:
 - '70066'
 - place-portr
 - '70065'
-Quincy Adams:
+QUINCY ADAMS:
 - '70104'
 - place-qamnl
 - '70103'
-Quincy Center:
+QUINCY CENTER:
 - '70102'
 - place-qnctr
 - '70101'
-Revere Beach:
+REVERE BEACH:
 - '70057'
 - place-rbmnl
 - '70058'
-Roxbury Crossing:
+ROXBURY CROSSING:
 - '70009'
 - place-rcmnl
 - '70008'
-Ruggles:
+RUGGLES:
 - '70010'
 - place-rugg
 - '70011'
-Savin Hill:
+SAVIN HILL:
 - '70087'
 - place-shmnl
 - '70088'
-Shawmut:
+SHAWMUT:
 - '70091'
 - place-smmnl
 - '70092'
-South Station:
+SOUTH STATION:
 - '70079'
 - place-sstat
 - '70080'
-State Street:
+STATE STREET:
 - '70041'
 - place-state
 - '70042'
 - '70022'
 - '70023'
-Stony Brook:
+STONY BROOK:
 - '70005'
 - place-sbmnl
 - '70004'
-Suffolk Downs:
+SUFFOLK DOWNS:
 - '70054'
 - place-sdmnl
 - '70053'
-Sullivan Square:
+SULLIVAN SQUARE:
 - '70030'
 - place-sull
 - '70031'
-Tufts Medical Center:
+TUFTS MEDICAL CENTER:
 - '70017'
 - place-tumnl
 - '70016'
-Wellington:
+WELLINGTON:
 - '70032'
 - place-welln
 - '70033'
-Wonderland:
+WONDERLAND:
 - '70059'
 - place-wondl
 - '70060'
-Wood Island:
+WOOD ISLAND:
 - '70050'
 - place-wimnl
 - '70049'

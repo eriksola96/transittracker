@@ -6,7 +6,8 @@ KEY = { 'api_key': config.api_key }
 MBTAENDPOINT = 'https://api-v3.mbta.com/{}'
 
 '''
-    Helper function to scrape all the stop ids
+    Helper function to scrape all the stop ids.
+    TODO: modify this to to scrape any route_type
 '''
 def get_stop_ids():
     alerts_endpoint = MBTAENDPOINT.format('stops/?filter[route_type]=1')
@@ -18,7 +19,7 @@ def parse_name_and_ids(all_t_stations):
     # Dictionary of name, id pairs for every T Subway Station
     t_names_and_ids = {}
     for station in all_t_stations:
-        station_name = station['attributes']['name']
+        station_name = station['attributes']['name'].upper()
         station_id = station['id']
         station_string_id = station['relationships']['parent_station']['data']['id']
         if station_name not in t_names_and_ids:
