@@ -26,10 +26,10 @@ def get_mins_or_sec(time_until_departure):
     minutes_time = int(parsed_time.group(2))
     seconds_time = int(parsed_time.group(3))
 
-    if isPlural(seconds_time):
+    if is_plural(seconds_time):
         secs += "s"
 
-    if isPlural(minutes_time):
+    if is_plural(minutes_time):
         mins += "s"
 
     if minutes_time == 0 and seconds_time != 0:
@@ -57,5 +57,12 @@ def get_predicted_train_departure(station_name, direction):
     return res['data']
 
 
-def isPlural(num):
+def is_plural(num):
     return num > 1
+
+'''
+    TODO
+'''
+def is_valid_direction():
+    return True
+
