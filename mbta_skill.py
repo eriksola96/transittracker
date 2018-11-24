@@ -1,6 +1,6 @@
-import logging
+import logging, os
 from config import config
-from helpers import helpers as help
+from helpers import helpers as helper
 
 
 import re
@@ -9,12 +9,16 @@ import yaml
 import requests
 import json
 from flask import Flask, render_template
-from flask_ask import Ask, statement
+from flask_ask import Ask, request, session, question, statement
 
 MBTAENDPOINT = 'https://api-v3.mbta.com/{}'
 KEY = { 'api_key': config.api_key }
-translate = yaml.load(open('config/translations.yml'))
+
+SESSION_STATION = "station"
+
+translate = yaml.load(open('helpers/alert_translations.yml'))
 train_ids = yaml.load(open('helpers/t_station_ids.yml'))
+direction_translations = yaml.load(open('helpers/direction_translations.yml'))
 
 app = Flask(__name__)
 ask = Ask(app, '/')
@@ -23,7 +27,10 @@ logger = logging.getLogger()
 
 @ask.launch
 def launch():
-    return get_train_prediction()
+    welcome_text = render_template('welcome')
+    help_text = render_template('help')
+    return question(welcome_text).reprompt(help_text)
+
 
 @ask.intent('GetAlertForColorIntent', convert={'color': 'color'})
 def get_alerts(color):
@@ -42,26 +49,50 @@ def get_alerts(color):
         return statement('<speak>{}</speak>'.format(speech_output))
 
 
-@ask.intent('GetTrainPredictionIntent', convert={'station_name': 'station_name'})
-def get_train_prediction(station_name):
-    prediction_data = get_predicted_train_departure(station_name)
+@ask.intent('GetTrainPredictionIntent', convert={'station_name': 'station_name', 'direction': 'direction'})
+def get_train_prediction(station_name, direction):
+    prediction_data = get_predicted_train_departure(station_name, direction)
     if len(prediction_data) == 0:
         speech_output = "Sorry, I can't seems to get any predictions for %s" % station_name
-        return help.get_speech_text(speech_output)
+        return helper.get_speech_text(speech_output)
     elif len(prediction_data) == 1:
         time_until_departure = translate_time(prediction_data[0]['attributes']['departure_time'])
-        speech_output = "There's only one train predicted to leave from %s in %s" % (station_name, time_until_departure)
-        return help.get_speech_text(speech_output)
+        speech_output = "There's only one train predicted to head %s from %s in %s" % (direction, station_name, time_until_departure)
+        return helper.get_speech_text(speech_output)
     else:
         first_time_until_departure = translate_time(prediction_data[0]['attributes']['departure_time'])
         second_time_until_departure = translate_time(prediction_data[1]['attributes']['departure_time'])
         first_mins_or_sec = get_mins_or_sec(first_time_until_departure)
         second_mins_or_sec = get_mins_or_sec(second_time_until_departure)
 
-        first_train = "The next train from %s is leaving in %s from now." % (station_name, first_mins_or_sec)
+        first_train = "The next train headed %s from %s is leaving in %s from now." % (direction, station_name, first_mins_or_sec)
         second_train = " The train after that leaves in %s" % second_mins_or_sec
         speech_output = first_train + second_train
-        return help.get_speech_text(speech_output)
+        return helper.get_speech_text(speech_output)
+
+
+@ask.intent('AMAZON.HelpIntent')
+def help():
+    help_text = render_template('help')
+    return question(help_text)
+
+
+@ask.intent('AMAZON.StopIntent')
+def stop():
+    bye_text = render_template('bye')
+    return statement(bye_text)
+
+
+@ask.intent('AMAZON.CancelIntent')
+def cancel():
+    bye_text = render_template('bye')
+    return statement(bye_text)
+
+
+@ask.session_ended
+def session_ended():
+    return "{}", 200
+
 
 
 def translate_time(departure_time):
@@ -85,10 +116,10 @@ def get_mins_or_sec(time_until_departure):
     minutes_time = int(parsed_time.group(2))
     seconds_time = int(parsed_time.group(3))
 
-    if help.isPlural(seconds_time):
+    if helper.isPlural(seconds_time):
         secs += "s"
 
-    if help.isPlural(minutes_time):
+    if helper.isPlural(minutes_time):
         mins += "s"
 
     if minutes_time == 0 and seconds_time != 0:
@@ -111,11 +142,12 @@ def parse_multiple_alerts(alerts):
     return speech_output
 
 
-def get_predicted_train_departure(station_name):
+def get_predicted_train_departure(station_name, direction):
     # Do a check if the station id is not there
     station_id = train_ids[station_name.upper()][1]
+    translated_direction = direction_translations[direction.upper()]
     prediction_endpoint = MBTAENDPOINT.format(
-        '/predictions?filter%5Bstop%5D=' + station_id + '&filter%5Bdirection_id%5D=0&include=stop,trip&filter[route_type]=1')
+        '/predictions?filter%5Bstop%5D=' + station_id + '&filter%5Bdirection_id%5D=' + translated_direction + '&include=stop,trip&filter[route_type]=1')
     r = requests.get(prediction_endpoint, data=KEY)
     res = json.loads(r.text)
     return res['data']

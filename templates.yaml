@@ -1,0 +1,12 @@
+welcome: |
+    <speak>
+        Welcome to Transit Tracker.
+        What station would you like a predicted time for?
+    </speak>
+
+help: |
+    I can help you out with letting you know about alerts or delays that you might hit on your way to the T.
+    Try asking, about alerts for a specific line or for a predicted travel time for one station to another.
+
+
+bye: Goodbye
