@@ -20,9 +20,9 @@ def launch():
     return question(welcome_text).reprompt(help_text)
 
 
-@ask.intent('GetAlertForColorIntent', convert={'color': 'color'})
-def get_alerts(color):
-    alerts_data = alerts_helper.get_alerts_present(color)
+@ask.intent('GetAlertForStationIntent', convert={'station_name': 'station_name'})
+def get_alerts(station_name):
+    alerts_data = alerts_helper.get_alerts_present_for_station(station_name)
     if len(alerts_data) == 1:
         cause = alerts_data[0]['attributes']['cause']
         effect = alerts_data[0]['attributes']['effect']
@@ -33,7 +33,7 @@ def get_alerts(color):
         speech_output = alerts_helper.parse_multiple_alerts(alerts_data)
         return statement('<speak>{}</speak>'.format(speech_output))
     else:
-        speech_output = "Nope, you're in the clear"
+        speech_output = "no alerts, you're in the clear"
         return statement('<speak>{}</speak>'.format(speech_output))
 
 
@@ -57,6 +57,7 @@ def get_train_prediction(station_name, direction):
     else:
         first_time_until_departure = prediction_helper.translate_time(prediction_data[0]['attributes']['departure_time'])
         second_time_until_departure = prediction_helper.translate_time(prediction_data[1]['attributes']['departure_time'])
+
         first_mins_or_sec = prediction_helper.get_mins_or_sec(first_time_until_departure)
         second_mins_or_sec = prediction_helper.get_mins_or_sec(second_time_until_departure)
 

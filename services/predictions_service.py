@@ -53,14 +53,20 @@ def get_predicted_train_departure(station_name, requested_direction):
     if requested_direction not in valid_directions_for_station:
         return False, valid_directions_for_station
 
-    #### NEED TO DO ERROR CHECKING ON DIRECTIONS ####
     translated_direction = direction_translations[requested_direction.upper()]
     prediction_endpoint = consts.MBTAENDPOINT.format(
         '/predictions?filter%5Bstop%5D=' + station_id + '&filter%5Bdirection_id%5D='
                                 + translated_direction + '&include=stop,trip&filter[route_type]=' + route_type)
     r = requests.get(prediction_endpoint, data=consts.KEY)
     res = json.loads(r.text)
-    return True, res['data']
+
+    # Only return the first 5 train times
+    prediction_data = res['data'][:5]
+
+    # API doesn't reliably return the timestamps sorted, so we do it here
+    sorted_prediction_data = sorted(prediction_data, key=lambda k: k['attributes']['departure_time'])
+
+    return True, sorted_prediction_data
 
 
 def is_plural(num):

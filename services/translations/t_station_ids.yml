@@ -7,6 +7,7 @@ AIRPORT:
   station_id:
   - '70048'
   - '70047'
+  station_line: Blue
 ALEWIFE:
   direction_type:
   - north
@@ -14,6 +15,7 @@ ALEWIFE:
   place_id: place-alfcl
   route_type: '1'
   station_id: '70061'
+  station_line: Red
 ALLSTON STREET:
   direction_type:
   - east
@@ -23,6 +25,7 @@ ALLSTON STREET:
   station_id:
   - '70127'
   - '70126'
+  station_line: Green
 ANDREW:
   direction_type:
   - north
@@ -32,6 +35,7 @@ ANDREW:
   station_id:
   - '70083'
   - '70084'
+  station_line: Red
 AQUARIUM:
   direction_type:
   - east
@@ -41,6 +45,7 @@ AQUARIUM:
   station_id:
   - '70044'
   - '70043'
+  station_line: Blue
 ARLINGTON:
   direction_type:
   - east
@@ -50,6 +55,7 @@ ARLINGTON:
   station_id:
   - '70157'
   - '70156'
+  station_line: Green
 ASHMONT:
   direction_type:
   - north
@@ -59,6 +65,7 @@ ASHMONT:
   station_id:
   - '70093'
   - '70094'
+  station_line: Red
 ASSEMBLY:
   direction_type:
   - north
@@ -68,6 +75,7 @@ ASSEMBLY:
   station_id:
   - '70278'
   - '70279'
+  station_line: Orange
 BABCOCK STREET:
   direction_type:
   - east
@@ -77,6 +85,7 @@ BABCOCK STREET:
   station_id:
   - '70137'
   - '70136'
+  station_line: Green
 BACK BAY:
   direction_type:
   - north
@@ -86,6 +95,7 @@ BACK BAY:
   station_id:
   - '70015'
   - '70014'
+  station_line: Orange
 BACK OF THE HILL:
   direction_type:
   - east
@@ -95,6 +105,7 @@ BACK OF THE HILL:
   station_id:
   - '70258'
   - '70257'
+  station_line: Green
 BEACHMONT:
   direction_type:
   - east
@@ -104,6 +115,7 @@ BEACHMONT:
   station_id:
   - '70055'
   - '70056'
+  station_line: Blue
 BEACONSFIELD:
   direction_type:
   - east
@@ -113,6 +125,7 @@ BEACONSFIELD:
   station_id:
   - '70177'
   - '70176'
+  station_line: Green
 BLANDFORD STREET:
   direction_type:
   - east
@@ -122,6 +135,7 @@ BLANDFORD STREET:
   station_id:
   - '70149'
   - '70148'
+  station_line: Green
 BOSTON COLLEGE:
   direction_type:
   - east
@@ -131,6 +145,7 @@ BOSTON COLLEGE:
   station_id:
   - '70106'
   - '70107'
+  station_line: Green
 BOSTON UNIVERSITY CENTRAL:
   direction_type:
   - east
@@ -140,6 +155,7 @@ BOSTON UNIVERSITY CENTRAL:
   station_id:
   - '70144'
   - '70145'
+  station_line: Green
 BOSTON UNIVERSITY EAST:
   direction_type:
   - east
@@ -149,6 +165,7 @@ BOSTON UNIVERSITY EAST:
   station_id:
   - '70146'
   - '70147'
+  station_line: Green
 BOSTON UNIVERSITY WEST:
   direction_type:
   - east
@@ -158,6 +175,7 @@ BOSTON UNIVERSITY WEST:
   station_id:
   - '70142'
   - '70143'
+  station_line: Green
 BOWDOIN:
   direction_type:
   - east
@@ -167,6 +185,7 @@ BOWDOIN:
   station_id:
   - '70038'
   - '70838'
+  station_line: Blue
 BOYLSTON:
   direction_type:
   - east
@@ -176,6 +195,7 @@ BOYLSTON:
   station_id:
   - '70158'
   - '70159'
+  station_line: Green
 BRAINTREE:
   direction_type:
   - north
@@ -183,6 +203,7 @@ BRAINTREE:
   place_id: place-brntn
   route_type: '1'
   station_id: '70105'
+  station_line: Red
 BRANDON HALL:
   direction_type:
   - east
@@ -192,6 +213,7 @@ BRANDON HALL:
   station_id:
   - '70226'
   - '70225'
+  station_line: Green
 BRIGHAM CIRCLE:
   direction_type:
   - east
@@ -201,6 +223,7 @@ BRIGHAM CIRCLE:
   station_id:
   - '70250'
   - '70249'
+  station_line: Green
 BROADWAY:
   direction_type:
   - north
@@ -210,6 +233,7 @@ BROADWAY:
   station_id:
   - '70081'
   - '70082'
+  station_line: Red
 BROOKLINE HILLS:
   direction_type:
   - east
@@ -219,6 +243,7 @@ BROOKLINE HILLS:
   station_id:
   - '70179'
   - '70178'
+  station_line: Green
 BROOKLINE VILLAGE:
   direction_type:
   - east
@@ -228,6 +253,7 @@ BROOKLINE VILLAGE:
   station_id:
   - '70180'
   - '70181'
+  station_line: Green
 BUTLER:
   direction_type:
   - inbound
@@ -237,6 +263,7 @@ BUTLER:
   station_id:
   - '70265'
   - '70266'
+  station_line: Mattapan
 CAPEN STREET:
   direction_type:
   - inbound
@@ -246,6 +273,7 @@ CAPEN STREET:
   station_id:
   - '70274'
   - '70273'
+  station_line: Mattapan
 CEDAR GROVE:
   direction_type:
   - inbound
@@ -255,6 +283,7 @@ CEDAR GROVE:
   station_id:
   - '70264'
   - '70263'
+  station_line: Mattapan
 CENTRAL:
   direction_type:
   - north
@@ -264,6 +293,7 @@ CENTRAL:
   station_id:
   - '70069'
   - '70070'
+  station_line: Red
 CENTRAL AVENUE:
   direction_type:
   - inbound
@@ -273,7 +303,8 @@ CENTRAL AVENUE:
   station_id:
   - '70269'
   - '70270'
-CHARLES/MGH:
+  station_line: Mattapan
+CHARLES:
   direction_type:
   - north
   - south
@@ -282,6 +313,7 @@ CHARLES/MGH:
   station_id:
   - '70074'
   - '70073'
+  station_line: Red
 CHESTNUT HILL:
   direction_type:
   - east
@@ -291,6 +323,7 @@ CHESTNUT HILL:
   station_id:
   - '70173'
   - '70172'
+  station_line: Green
 CHESTNUT HILL AVENUE:
   direction_type:
   - east
@@ -300,6 +333,7 @@ CHESTNUT HILL AVENUE:
   station_id:
   - '70112'
   - '70113'
+  station_line: Green
 CHINATOWN:
   direction_type:
   - north
@@ -309,6 +343,7 @@ CHINATOWN:
   station_id:
   - '70019'
   - '70018'
+  station_line: Orange
 CHISWICK ROAD:
   direction_type:
   - east
@@ -318,6 +353,7 @@ CHISWICK ROAD:
   station_id:
   - '70115'
   - '70114'
+  station_line: Green
 CLEVELAND CIRCLE:
   direction_type:
   - east
@@ -327,6 +363,7 @@ CLEVELAND CIRCLE:
   station_id:
   - '70238'
   - '70237'
+  station_line: Green
 COMMUNITY COLLEGE:
   direction_type:
   - north
@@ -336,6 +373,7 @@ COMMUNITY COLLEGE:
   station_id:
   - '70029'
   - '70028'
+  station_line: Orange
 COOLIDGE CORNER:
   direction_type:
   - east
@@ -345,6 +383,7 @@ COOLIDGE CORNER:
   station_id:
   - '70219'
   - '70220'
+  station_line: Green
 COPLEY:
   direction_type:
   - east
@@ -354,6 +393,7 @@ COPLEY:
   station_id:
   - '70154'
   - '70155'
+  station_line: Green
 DAVIS:
   direction_type:
   - north
@@ -363,6 +403,7 @@ DAVIS:
   station_id:
   - '70063'
   - '70064'
+  station_line: Red
 DEAN ROAD:
   direction_type:
   - east
@@ -372,6 +413,7 @@ DEAN ROAD:
   station_id:
   - '70233'
   - '70234'
+  station_line: Green
 DOWNTOWN CROSSING:
   direction_type:
   - north
@@ -383,6 +425,7 @@ DOWNTOWN CROSSING:
   - '70021'
   - '70078'
   - '70020'
+  station_line: Red
 ELIOT:
   direction_type:
   - east
@@ -392,6 +435,7 @@ ELIOT:
   station_id:
   - '70167'
   - '70166'
+  station_line: Green
 ENGLEWOOD AVENUE:
   direction_type:
   - east
@@ -401,6 +445,7 @@ ENGLEWOOD AVENUE:
   station_id:
   - '70236'
   - '70235'
+  station_line: Green
 FAIRBANKS STREET:
   direction_type:
   - east
@@ -410,6 +455,7 @@ FAIRBANKS STREET:
   station_id:
   - '70228'
   - '70227'
+  station_line: Green
 FENWAY:
   direction_type:
   - east
@@ -419,6 +465,7 @@ FENWAY:
   station_id:
   - '70186'
   - '70187'
+  station_line: Green
 FENWOOD ROAD:
   direction_type:
   - east
@@ -428,6 +475,7 @@ FENWOOD ROAD:
   station_id:
   - '70252'
   - '70251'
+  station_line: Green
 FIELDS CORNER:
   direction_type:
   - north
@@ -437,6 +485,7 @@ FIELDS CORNER:
   station_id:
   - '70090'
   - '70089'
+  station_line: Red
 FOREST HILLS:
   direction_type:
   - north
@@ -444,6 +493,7 @@ FOREST HILLS:
   place_id: place-forhl
   route_type: '1'
   station_id: '70001'
+  station_line: Orange
 GOVERNMENT CENTER:
   direction_type:
   - east
@@ -453,6 +503,7 @@ GOVERNMENT CENTER:
   station_id:
   - '70039'
   - '70040'
+  station_line: Blue
 GREEN STREET:
   direction_type:
   - north
@@ -462,6 +513,7 @@ GREEN STREET:
   station_id:
   - '70003'
   - '70002'
+  station_line: Orange
 GRIGGS STREET:
   direction_type:
   - east
@@ -471,6 +523,7 @@ GRIGGS STREET:
   station_id:
   - '70128'
   - '70129'
+  station_line: Green
 HARVARD:
   direction_type:
   - north
@@ -480,6 +533,7 @@ HARVARD:
   station_id:
   - '70067'
   - '70068'
+  station_line: Red
 HARVARD AVENUE:
   direction_type:
   - east
@@ -489,6 +543,7 @@ HARVARD AVENUE:
   station_id:
   - '70131'
   - '70130'
+  station_line: Green
 HAWES STREET:
   direction_type:
   - east
@@ -498,6 +553,7 @@ HAWES STREET:
   station_id:
   - '70213'
   - '70214'
+  station_line: Green
 HAYMARKET:
   direction_type:
   - north
@@ -507,6 +563,7 @@ HAYMARKET:
   station_id:
   - '70024'
   - '70025'
+  station_line: Orange
 HEATH STREET:
   direction_type:
   - east
@@ -514,6 +571,7 @@ HEATH STREET:
   place_id: place-hsmnl
   route_type: '0'
   station_id: '70260'
+  station_line: Green
 HYNES CONVENTION CENTER:
   direction_type:
   - east
@@ -523,6 +581,7 @@ HYNES CONVENTION CENTER:
   station_id:
   - '70152'
   - '70153'
+  station_line: Green
 JACKSON SQUARE:
   direction_type:
   - north
@@ -532,7 +591,8 @@ JACKSON SQUARE:
   station_id:
   - '70007'
   - '70006'
-JFK/UMASS:
+  station_line: Orange
+JFK:
   direction_type:
   - north
   - south
@@ -543,7 +603,8 @@ JFK/UMASS:
   - '70086'
   - '70095'
   - '70085'
-KENDALL/MIT:
+  station_line: Red
+KENDALL:
   direction_type:
   - north
   - south
@@ -552,6 +613,7 @@ KENDALL/MIT:
   station_id:
   - '70072'
   - '70071'
+  station_line: Red
 KENMORE:
   direction_type:
   - east
@@ -561,6 +623,7 @@ KENMORE:
   station_id:
   - '70150'
   - '70151'
+  station_line: Green
 KENT STREET:
   direction_type:
   - east
@@ -570,6 +633,7 @@ KENT STREET:
   station_id:
   - '70216'
   - '70215'
+  station_line: Green
 LECHMERE:
   direction_type:
   - east
@@ -579,6 +643,7 @@ LECHMERE:
   station_id:
   - '70210'
   - '70209'
+  station_line: Green
 LONGWOOD:
   direction_type:
   - east
@@ -588,6 +653,7 @@ LONGWOOD:
   station_id:
   - '70183'
   - '70182'
+  station_line: Green
 LONGWOOD MEDICAL AREA:
   direction_type:
   - east
@@ -597,6 +663,7 @@ LONGWOOD MEDICAL AREA:
   station_id:
   - '70247'
   - '70248'
+  station_line: Green
 MALDEN CENTER:
   direction_type:
   - north
@@ -606,6 +673,7 @@ MALDEN CENTER:
   station_id:
   - '70035'
   - '70034'
+  station_line: Orange
 MASSACHUSETTS AVENUE:
   direction_type:
   - north
@@ -615,6 +683,7 @@ MASSACHUSETTS AVENUE:
   station_id:
   - '70013'
   - '70012'
+  station_line: Orange
 MATTAPAN:
   direction_type:
   - inbound
@@ -624,6 +693,7 @@ MATTAPAN:
   station_id:
   - '70275'
   - '70276'
+  station_line: Mattapan
 MAVERICK:
   direction_type:
   - east
@@ -633,6 +703,17 @@ MAVERICK:
   station_id:
   - '70045'
   - '70046'
+  station_line: Blue
+MGH:
+  direction_type:
+  - north
+  - south
+  place_id: place-chmnl
+  route_type: '1'
+  station_id:
+  - '70074'
+  - '70073'
+  station_line: Red
 MILTON:
   direction_type:
   - inbound
@@ -642,6 +723,7 @@ MILTON:
   station_id:
   - '70267'
   - '70268'
+  station_line: Mattapan
 MISSION PARK:
   direction_type:
   - east
@@ -651,6 +733,17 @@ MISSION PARK:
   station_id:
   - '70254'
   - '70253'
+  station_line: Green
+MIT:
+  direction_type:
+  - north
+  - south
+  place_id: place-knncl
+  route_type: '1'
+  station_id:
+  - '70072'
+  - '70071'
+  station_line: Red
 MUSEUM OF FINE ARTS:
   direction_type:
   - east
@@ -660,6 +753,7 @@ MUSEUM OF FINE ARTS:
   station_id:
   - '70245'
   - '70246'
+  station_line: Green
 NEWTON CENTRE:
   direction_type:
   - east
@@ -669,6 +763,7 @@ NEWTON CENTRE:
   station_id:
   - '70170'
   - '70171'
+  station_line: Green
 NEWTON HIGHLANDS:
   direction_type:
   - east
@@ -678,6 +773,7 @@ NEWTON HIGHLANDS:
   station_id:
   - '70168'
   - '70169'
+  station_line: Green
 NORTH QUINCY:
   direction_type:
   - north
@@ -687,6 +783,7 @@ NORTH QUINCY:
   station_id:
   - '70098'
   - '70097'
+  station_line: Red
 NORTH STATION:
   direction_type:
   - north
@@ -696,6 +793,7 @@ NORTH STATION:
   station_id:
   - '70027'
   - '70026'
+  station_line: Orange
 NORTHEASTERN UNIVERSITY:
   direction_type:
   - east
@@ -705,6 +803,7 @@ NORTHEASTERN UNIVERSITY:
   station_id:
   - '70244'
   - '70243'
+  station_line: Green
 OAK GROVE:
   direction_type:
   - north
@@ -712,6 +811,7 @@ OAK GROVE:
   place_id: place-ogmnl
   route_type: '1'
   station_id: '70036'
+  station_line: Orange
 ORIENT HEIGHTS:
   direction_type:
   - east
@@ -721,6 +821,7 @@ ORIENT HEIGHTS:
   station_id:
   - '70051'
   - '70052'
+  station_line: Blue
 PACKARDS CORNER:
   direction_type:
   - east
@@ -730,6 +831,7 @@ PACKARDS CORNER:
   station_id:
   - '70135'
   - '70134'
+  station_line: Green
 PARK STREET:
   direction_type:
   - north
@@ -739,6 +841,7 @@ PARK STREET:
   station_id:
   - '70076'
   - '70075'
+  station_line: Red
 PLEASANT STREET:
   direction_type:
   - east
@@ -748,6 +851,7 @@ PLEASANT STREET:
   station_id:
   - '70139'
   - '70138'
+  station_line: Green
 PORTER:
   direction_type:
   - north
@@ -757,6 +861,7 @@ PORTER:
   station_id:
   - '70066'
   - '70065'
+  station_line: Red
 PRUDENTIAL:
   direction_type:
   - east
@@ -766,6 +871,7 @@ PRUDENTIAL:
   station_id:
   - '70240'
   - '70239'
+  station_line: Green
 QUINCY ADAMS:
   direction_type:
   - north
@@ -775,6 +881,7 @@ QUINCY ADAMS:
   station_id:
   - '70104'
   - '70103'
+  station_line: Red
 QUINCY CENTER:
   direction_type:
   - north
@@ -784,6 +891,7 @@ QUINCY CENTER:
   station_id:
   - '70102'
   - '70101'
+  station_line: Red
 RESERVOIR:
   direction_type:
   - east
@@ -793,6 +901,7 @@ RESERVOIR:
   station_id:
   - '70175'
   - '70174'
+  station_line: Green
 REVERE BEACH:
   direction_type:
   - east
@@ -802,6 +911,7 @@ REVERE BEACH:
   station_id:
   - '70057'
   - '70058'
+  station_line: Blue
 RIVERSIDE:
   direction_type:
   - east
@@ -811,6 +921,7 @@ RIVERSIDE:
   station_id:
   - '70160'
   - '70161'
+  station_line: Green
 RIVERWAY:
   direction_type:
   - east
@@ -820,6 +931,7 @@ RIVERWAY:
   station_id:
   - '70255'
   - '70256'
+  station_line: Green
 ROXBURY CROSSING:
   direction_type:
   - north
@@ -829,6 +941,7 @@ ROXBURY CROSSING:
   station_id:
   - '70009'
   - '70008'
+  station_line: Orange
 RUGGLES:
   direction_type:
   - north
@@ -838,6 +951,7 @@ RUGGLES:
   station_id:
   - '70010'
   - '70011'
+  station_line: Orange
 SAINT MARYS STREET:
   direction_type:
   - east
@@ -847,6 +961,7 @@ SAINT MARYS STREET:
   station_id:
   - '70211'
   - '70212'
+  station_line: Green
 SAINT PAUL STREET:
   direction_type:
   - east
@@ -858,6 +973,7 @@ SAINT PAUL STREET:
   - '70140'
   - '70217'
   - '70218'
+  station_line: Green
 SAVIN HILL:
   direction_type:
   - north
@@ -867,6 +983,7 @@ SAVIN HILL:
   station_id:
   - '70087'
   - '70088'
+  station_line: Red
 SCIENCE PARK:
   direction_type:
   - east
@@ -876,6 +993,7 @@ SCIENCE PARK:
   station_id:
   - '70207'
   - '70208'
+  station_line: Green
 SHAWMUT:
   direction_type:
   - north
@@ -885,6 +1003,7 @@ SHAWMUT:
   station_id:
   - '70091'
   - '70092'
+  station_line: Red
 SOUTH STATION:
   direction_type:
   - north
@@ -894,6 +1013,7 @@ SOUTH STATION:
   station_id:
   - '70079'
   - '70080'
+  station_line: Red
 SOUTH STREET:
   direction_type:
   - east
@@ -903,6 +1023,7 @@ SOUTH STREET:
   station_id:
   - '70111'
   - '70110'
+  station_line: Green
 STATE STREET:
   direction_type:
   - east
@@ -914,6 +1035,7 @@ STATE STREET:
   - '70042'
   - '70022'
   - '70023'
+  station_line: Blue
 STONY BROOK:
   direction_type:
   - north
@@ -923,6 +1045,7 @@ STONY BROOK:
   station_id:
   - '70005'
   - '70004'
+  station_line: Orange
 SUFFOLK DOWNS:
   direction_type:
   - east
@@ -932,6 +1055,7 @@ SUFFOLK DOWNS:
   station_id:
   - '70054'
   - '70053'
+  station_line: Blue
 SULLIVAN SQUARE:
   direction_type:
   - north
@@ -941,6 +1065,7 @@ SULLIVAN SQUARE:
   station_id:
   - '70030'
   - '70031'
+  station_line: Orange
 SUMMIT AVENUE:
   direction_type:
   - east
@@ -950,6 +1075,7 @@ SUMMIT AVENUE:
   station_id:
   - '70223'
   - '70224'
+  station_line: Green
 SUTHERLAND ROAD:
   direction_type:
   - east
@@ -959,6 +1085,7 @@ SUTHERLAND ROAD:
   station_id:
   - '70117'
   - '70116'
+  station_line: Green
 SYMPHONY:
   direction_type:
   - east
@@ -968,6 +1095,7 @@ SYMPHONY:
   station_id:
   - '70242'
   - '70241'
+  station_line: Green
 TAPPAN STREET:
   direction_type:
   - east
@@ -977,6 +1105,7 @@ TAPPAN STREET:
   station_id:
   - '70232'
   - '70231'
+  station_line: Green
 TUFTS MEDICAL CENTER:
   direction_type:
   - north
@@ -986,6 +1115,19 @@ TUFTS MEDICAL CENTER:
   station_id:
   - '70017'
   - '70016'
+  station_line: Orange
+UMASS:
+  direction_type:
+  - north
+  - south
+  place_id: place-jfk
+  route_type: '1'
+  station_id:
+  - '70096'
+  - '70086'
+  - '70095'
+  - '70085'
+  station_line: Red
 VALLEY ROAD:
   direction_type:
   - inbound
@@ -995,6 +1137,7 @@ VALLEY ROAD:
   station_id:
   - '70271'
   - '70272'
+  station_line: Mattapan
 WABAN:
   direction_type:
   - east
@@ -1004,6 +1147,7 @@ WABAN:
   station_id:
   - '70164'
   - '70165'
+  station_line: Green
 WARREN STREET:
   direction_type:
   - east
@@ -1013,6 +1157,7 @@ WARREN STREET:
   station_id:
   - '70124'
   - '70125'
+  station_line: Green
 WASHINGTON SQUARE:
   direction_type:
   - east
@@ -1022,6 +1167,7 @@ WASHINGTON SQUARE:
   station_id:
   - '70229'
   - '70230'
+  station_line: Green
 WASHINGTON STREET:
   direction_type:
   - east
@@ -1031,6 +1177,7 @@ WASHINGTON STREET:
   station_id:
   - '70121'
   - '70120'
+  station_line: Green
 WELLINGTON:
   direction_type:
   - north
@@ -1040,6 +1187,7 @@ WELLINGTON:
   station_id:
   - '70032'
   - '70033'
+  station_line: Orange
 WONDERLAND:
   direction_type:
   - east
@@ -1049,6 +1197,7 @@ WONDERLAND:
   station_id:
   - '70059'
   - '70060'
+  station_line: Blue
 WOOD ISLAND:
   direction_type:
   - east
@@ -1058,6 +1207,7 @@ WOOD ISLAND:
   station_id:
   - '70050'
   - '70049'
+  station_line: Blue
 WOODLAND:
   direction_type:
   - east
@@ -1067,3 +1217,4 @@ WOODLAND:
   station_id:
   - '70162'
   - '70163'
+  station_line: Green

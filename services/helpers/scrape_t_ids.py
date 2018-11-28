@@ -11,6 +11,7 @@ STATION_ID     = 'station_id'
 PLACE_ID       = 'place_id'
 ROUTE_TYPE     = 'route_type'
 DIRECTION_TYPE = 'direction_type'
+STATION_LINE   = 'station_line'
 
 #List of Supported Lines
 SUPPORTED_LINES = ['Orange Line', 'Red Line', 'Blue Line', 'Green Line', 'Mattapan Trolley']
@@ -23,6 +24,7 @@ INBOUND_OUTBOUND = ['Mattapan Trolley']
 # Type of rail - green should be the only light rail
 LIGHT_RAIL = '0'
 HEAVY_RAIL = '1'
+
 
 '''
     Helper to parse description which contains the color of the station.
@@ -38,11 +40,11 @@ def get_train_direction_type(description):
         if found_color:
             the_color = found_color[0]
             if the_color in NORTH_SOUTH:
-                return north_south
+                return the_color.split()[0], north_south
             elif the_color in EAST_WEST:
-                return east_west
+                return the_color.split()[0], east_west
             elif the_color in INBOUND_OUTBOUND:
-                return inbound_outbound
+                return the_color.split()[0], inbound_outbound
             else:
                 raise ValueError('Couldn\'t find a matching supported color.')
     raise ValueError('Couldn\'t find the color type for this description')
@@ -56,25 +58,47 @@ def parse_name_and_ids(route_type):
     # Dictionary of name, id pairs for every T Subway Station
     t_names_and_ids = {}
     for station in all_t_stations:
+        # Strange case where / in name JFK/UMASS we have to duplicate the entry
+        duplicate_entry_station_name = ''
         station_name = station['attributes']['name'].upper()
-        station_direction = get_train_direction_type(station['attributes']['description'])
+        duplicate_entry = True if '/' in station_name else False
+        if duplicate_entry:
+            station_name = station['attributes']['name'].upper().split('/')[0]
+            duplicate_entry_station_name = station['attributes']['name'].upper().split('/')[1]
+
+        station_line, station_direction = get_train_direction_type(station['attributes']['description'])
         station_id = station['id']
         station_string_id = station['relationships']['parent_station']['data']['id']
         if station_name not in t_names_and_ids:
+            #Doesn't exist yet, create it
             station_info = {STATION_ID: station_id, PLACE_ID: station_string_id,
-                            DIRECTION_TYPE: station_direction, ROUTE_TYPE: route_type}
+                            DIRECTION_TYPE: station_direction.copy(),
+                            STATION_LINE: station_line,
+                            ROUTE_TYPE: route_type}
             t_names_and_ids[station_name] = station_info
+
+            if duplicate_entry:
+                duplicated_directions   = station_info[DIRECTION_TYPE].copy()
+                duplicated_station_info = station_info.copy()
+                duplicated_station_info[DIRECTION_TYPE] = duplicated_directions
+                t_names_and_ids[duplicate_entry_station_name] = duplicated_station_info
         else:
             if isinstance(t_names_and_ids[station_name][STATION_ID], list):
                 new_list_of_station_ids = t_names_and_ids[station_name][STATION_ID]
                 new_list_of_station_ids.append(station_id)
                 t_names_and_ids[station_name][STATION_ID] = new_list_of_station_ids
+
+                if duplicate_entry:
+                    t_names_and_ids[duplicate_entry_station_name][STATION_ID] = new_list_of_station_ids.copy()
             else:
                 list_of_station_ids = [t_names_and_ids[station_name][STATION_ID]]
                 list_of_station_ids.append(station_id)
                 t_names_and_ids[station_name][STATION_ID] = list_of_station_ids
 
-
+                if duplicate_entry:
+                    duplicate_list_of_station_ids = [t_names_and_ids[duplicate_entry_station_name][STATION_ID]]
+                    duplicate_list_of_station_ids.append(station_id)
+                    t_names_and_ids[duplicate_entry_station_name][STATION_ID] = duplicate_list_of_station_ids
     return t_names_and_ids
 
 
