@@ -1,598 +1,1069 @@
 AIRPORT:
-- '70048'
-- place-aport
-- '1'
-- '70047'
+  direction_type:
+  - east
+  - west
+  place_id: place-aport
+  route_type: '1'
+  station_id:
+  - '70048'
+  - '70047'
 ALEWIFE:
-- '70061'
-- place-alfcl
-- '1'
+  direction_type:
+  - north
+  - south
+  place_id: place-alfcl
+  route_type: '1'
+  station_id: '70061'
 ALLSTON STREET:
-- '70127'
-- place-alsgr
-- '0'
-- '70126'
+  direction_type:
+  - east
+  - west
+  place_id: place-alsgr
+  route_type: '0'
+  station_id:
+  - '70127'
+  - '70126'
 ANDREW:
-- '70083'
-- place-andrw
-- '1'
-- '70084'
+  direction_type:
+  - north
+  - south
+  place_id: place-andrw
+  route_type: '1'
+  station_id:
+  - '70083'
+  - '70084'
 AQUARIUM:
-- '70044'
-- place-aqucl
-- '1'
-- '70043'
+  direction_type:
+  - east
+  - west
+  place_id: place-aqucl
+  route_type: '1'
+  station_id:
+  - '70044'
+  - '70043'
 ARLINGTON:
-- '70157'
-- place-armnl
-- '0'
-- '70156'
+  direction_type:
+  - east
+  - west
+  place_id: place-armnl
+  route_type: '0'
+  station_id:
+  - '70157'
+  - '70156'
 ASHMONT:
-- '70093'
-- place-asmnl
-- '1'
-- '70094'
+  direction_type:
+  - north
+  - south
+  place_id: place-asmnl
+  route_type: '1'
+  station_id:
+  - '70093'
+  - '70094'
 ASSEMBLY:
-- '70278'
-- place-astao
-- '1'
-- '70279'
+  direction_type:
+  - north
+  - south
+  place_id: place-astao
+  route_type: '1'
+  station_id:
+  - '70278'
+  - '70279'
 BABCOCK STREET:
-- '70137'
-- place-babck
-- '0'
-- '70136'
+  direction_type:
+  - east
+  - west
+  place_id: place-babck
+  route_type: '0'
+  station_id:
+  - '70137'
+  - '70136'
 BACK BAY:
-- '70015'
-- place-bbsta
-- '1'
-- '70014'
+  direction_type:
+  - north
+  - south
+  place_id: place-bbsta
+  route_type: '1'
+  station_id:
+  - '70015'
+  - '70014'
 BACK OF THE HILL:
-- '70258'
-- place-bckhl
-- '0'
-- '70257'
+  direction_type:
+  - east
+  - west
+  place_id: place-bckhl
+  route_type: '0'
+  station_id:
+  - '70258'
+  - '70257'
 BEACHMONT:
-- '70055'
-- place-bmmnl
-- '1'
-- '70056'
+  direction_type:
+  - east
+  - west
+  place_id: place-bmmnl
+  route_type: '1'
+  station_id:
+  - '70055'
+  - '70056'
 BEACONSFIELD:
-- '70177'
-- place-bcnfd
-- '0'
-- '70176'
+  direction_type:
+  - east
+  - west
+  place_id: place-bcnfd
+  route_type: '0'
+  station_id:
+  - '70177'
+  - '70176'
 BLANDFORD STREET:
-- '70149'
-- place-bland
-- '0'
-- '70148'
+  direction_type:
+  - east
+  - west
+  place_id: place-bland
+  route_type: '0'
+  station_id:
+  - '70149'
+  - '70148'
 BOSTON COLLEGE:
-- '70106'
-- place-lake
-- '0'
-- '70107'
+  direction_type:
+  - east
+  - west
+  place_id: place-lake
+  route_type: '0'
+  station_id:
+  - '70106'
+  - '70107'
 BOSTON UNIVERSITY CENTRAL:
-- '70144'
-- place-bucen
-- '0'
-- '70145'
+  direction_type:
+  - east
+  - west
+  place_id: place-bucen
+  route_type: '0'
+  station_id:
+  - '70144'
+  - '70145'
 BOSTON UNIVERSITY EAST:
-- '70146'
-- place-buest
-- '0'
-- '70147'
+  direction_type:
+  - east
+  - west
+  place_id: place-buest
+  route_type: '0'
+  station_id:
+  - '70146'
+  - '70147'
 BOSTON UNIVERSITY WEST:
-- '70142'
-- place-buwst
-- '0'
-- '70143'
+  direction_type:
+  - east
+  - west
+  place_id: place-buwst
+  route_type: '0'
+  station_id:
+  - '70142'
+  - '70143'
 BOWDOIN:
-- '70038'
-- place-bomnl
-- '1'
-- '70838'
+  direction_type:
+  - east
+  - west
+  place_id: place-bomnl
+  route_type: '1'
+  station_id:
+  - '70038'
+  - '70838'
 BOYLSTON:
-- '70158'
-- place-boyls
-- '0'
-- '70159'
+  direction_type:
+  - east
+  - west
+  place_id: place-boyls
+  route_type: '0'
+  station_id:
+  - '70158'
+  - '70159'
 BRAINTREE:
-- '70105'
-- place-brntn
-- '1'
+  direction_type:
+  - north
+  - south
+  place_id: place-brntn
+  route_type: '1'
+  station_id: '70105'
 BRANDON HALL:
-- '70226'
-- place-bndhl
-- '0'
-- '70225'
+  direction_type:
+  - east
+  - west
+  place_id: place-bndhl
+  route_type: '0'
+  station_id:
+  - '70226'
+  - '70225'
 BRIGHAM CIRCLE:
-- '70250'
-- place-brmnl
-- '0'
-- '70249'
+  direction_type:
+  - east
+  - west
+  place_id: place-brmnl
+  route_type: '0'
+  station_id:
+  - '70250'
+  - '70249'
 BROADWAY:
-- '70081'
-- place-brdwy
-- '1'
-- '70082'
+  direction_type:
+  - north
+  - south
+  place_id: place-brdwy
+  route_type: '1'
+  station_id:
+  - '70081'
+  - '70082'
 BROOKLINE HILLS:
-- '70179'
-- place-brkhl
-- '0'
-- '70178'
+  direction_type:
+  - east
+  - west
+  place_id: place-brkhl
+  route_type: '0'
+  station_id:
+  - '70179'
+  - '70178'
 BROOKLINE VILLAGE:
-- '70180'
-- place-bvmnl
-- '0'
-- '70181'
+  direction_type:
+  - east
+  - west
+  place_id: place-bvmnl
+  route_type: '0'
+  station_id:
+  - '70180'
+  - '70181'
 BUTLER:
-- '70265'
-- place-butlr
-- '0'
-- '70266'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-butlr
+  route_type: '0'
+  station_id:
+  - '70265'
+  - '70266'
 CAPEN STREET:
-- '70274'
-- place-capst
-- '0'
-- '70273'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-capst
+  route_type: '0'
+  station_id:
+  - '70274'
+  - '70273'
 CEDAR GROVE:
-- '70264'
-- place-cedgr
-- '0'
-- '70263'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-cedgr
+  route_type: '0'
+  station_id:
+  - '70264'
+  - '70263'
 CENTRAL:
-- '70069'
-- place-cntsq
-- '1'
-- '70070'
+  direction_type:
+  - north
+  - south
+  place_id: place-cntsq
+  route_type: '1'
+  station_id:
+  - '70069'
+  - '70070'
 CENTRAL AVENUE:
-- '70269'
-- place-cenav
-- '0'
-- '70270'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-cenav
+  route_type: '0'
+  station_id:
+  - '70269'
+  - '70270'
 CHARLES/MGH:
-- '70074'
-- place-chmnl
-- '1'
-- '70073'
+  direction_type:
+  - north
+  - south
+  place_id: place-chmnl
+  route_type: '1'
+  station_id:
+  - '70074'
+  - '70073'
 CHESTNUT HILL:
-- '70173'
-- place-chhil
-- '0'
-- '70172'
+  direction_type:
+  - east
+  - west
+  place_id: place-chhil
+  route_type: '0'
+  station_id:
+  - '70173'
+  - '70172'
 CHESTNUT HILL AVENUE:
-- '70112'
-- place-chill
-- '0'
-- '70113'
+  direction_type:
+  - east
+  - west
+  place_id: place-chill
+  route_type: '0'
+  station_id:
+  - '70112'
+  - '70113'
 CHINATOWN:
-- '70019'
-- place-chncl
-- '1'
-- '70018'
+  direction_type:
+  - north
+  - south
+  place_id: place-chncl
+  route_type: '1'
+  station_id:
+  - '70019'
+  - '70018'
 CHISWICK ROAD:
-- '70115'
-- place-chswk
-- '0'
-- '70114'
+  direction_type:
+  - east
+  - west
+  place_id: place-chswk
+  route_type: '0'
+  station_id:
+  - '70115'
+  - '70114'
 CLEVELAND CIRCLE:
-- '70238'
-- place-clmnl
-- '0'
-- '70237'
+  direction_type:
+  - east
+  - west
+  place_id: place-clmnl
+  route_type: '0'
+  station_id:
+  - '70238'
+  - '70237'
 COMMUNITY COLLEGE:
-- '70029'
-- place-ccmnl
-- '1'
-- '70028'
+  direction_type:
+  - north
+  - south
+  place_id: place-ccmnl
+  route_type: '1'
+  station_id:
+  - '70029'
+  - '70028'
 COOLIDGE CORNER:
-- '70219'
-- place-cool
-- '0'
-- '70220'
+  direction_type:
+  - east
+  - west
+  place_id: place-cool
+  route_type: '0'
+  station_id:
+  - '70219'
+  - '70220'
 COPLEY:
-- '70154'
-- place-coecl
-- '0'
-- '70155'
+  direction_type:
+  - east
+  - west
+  place_id: place-coecl
+  route_type: '0'
+  station_id:
+  - '70154'
+  - '70155'
 DAVIS:
-- '70063'
-- place-davis
-- '1'
-- '70064'
+  direction_type:
+  - north
+  - south
+  place_id: place-davis
+  route_type: '1'
+  station_id:
+  - '70063'
+  - '70064'
 DEAN ROAD:
-- '70233'
-- place-denrd
-- '0'
-- '70234'
+  direction_type:
+  - east
+  - west
+  place_id: place-denrd
+  route_type: '0'
+  station_id:
+  - '70233'
+  - '70234'
 DOWNTOWN CROSSING:
-- '70077'
-- place-dwnxg
-- '1'
-- '70021'
-- '70078'
-- '70020'
+  direction_type:
+  - north
+  - south
+  place_id: place-dwnxg
+  route_type: '1'
+  station_id:
+  - '70077'
+  - '70021'
+  - '70078'
+  - '70020'
 ELIOT:
-- '70167'
-- place-eliot
-- '0'
-- '70166'
+  direction_type:
+  - east
+  - west
+  place_id: place-eliot
+  route_type: '0'
+  station_id:
+  - '70167'
+  - '70166'
 ENGLEWOOD AVENUE:
-- '70236'
-- place-engav
-- '0'
-- '70235'
+  direction_type:
+  - east
+  - west
+  place_id: place-engav
+  route_type: '0'
+  station_id:
+  - '70236'
+  - '70235'
 FAIRBANKS STREET:
-- '70228'
-- place-fbkst
-- '0'
-- '70227'
+  direction_type:
+  - east
+  - west
+  place_id: place-fbkst
+  route_type: '0'
+  station_id:
+  - '70228'
+  - '70227'
 FENWAY:
-- '70186'
-- place-fenwy
-- '0'
-- '70187'
+  direction_type:
+  - east
+  - west
+  place_id: place-fenwy
+  route_type: '0'
+  station_id:
+  - '70186'
+  - '70187'
 FENWOOD ROAD:
-- '70252'
-- place-fenwd
-- '0'
-- '70251'
+  direction_type:
+  - east
+  - west
+  place_id: place-fenwd
+  route_type: '0'
+  station_id:
+  - '70252'
+  - '70251'
 FIELDS CORNER:
-- '70090'
-- place-fldcr
-- '1'
-- '70089'
+  direction_type:
+  - north
+  - south
+  place_id: place-fldcr
+  route_type: '1'
+  station_id:
+  - '70090'
+  - '70089'
 FOREST HILLS:
-- '70001'
-- place-forhl
-- '1'
+  direction_type:
+  - north
+  - south
+  place_id: place-forhl
+  route_type: '1'
+  station_id: '70001'
 GOVERNMENT CENTER:
-- '70039'
-- place-gover
-- '1'
-- '70040'
+  direction_type:
+  - east
+  - west
+  place_id: place-gover
+  route_type: '1'
+  station_id:
+  - '70039'
+  - '70040'
 GREEN STREET:
-- '70003'
-- place-grnst
-- '1'
-- '70002'
+  direction_type:
+  - north
+  - south
+  place_id: place-grnst
+  route_type: '1'
+  station_id:
+  - '70003'
+  - '70002'
 GRIGGS STREET:
-- '70128'
-- place-grigg
-- '0'
-- '70129'
+  direction_type:
+  - east
+  - west
+  place_id: place-grigg
+  route_type: '0'
+  station_id:
+  - '70128'
+  - '70129'
 HARVARD:
-- '70067'
-- place-harsq
-- '1'
-- '70068'
+  direction_type:
+  - north
+  - south
+  place_id: place-harsq
+  route_type: '1'
+  station_id:
+  - '70067'
+  - '70068'
 HARVARD AVENUE:
-- '70131'
-- place-harvd
-- '0'
-- '70130'
+  direction_type:
+  - east
+  - west
+  place_id: place-harvd
+  route_type: '0'
+  station_id:
+  - '70131'
+  - '70130'
 HAWES STREET:
-- '70213'
-- place-hwsst
-- '0'
-- '70214'
+  direction_type:
+  - east
+  - west
+  place_id: place-hwsst
+  route_type: '0'
+  station_id:
+  - '70213'
+  - '70214'
 HAYMARKET:
-- '70024'
-- place-haecl
-- '1'
-- '70025'
+  direction_type:
+  - north
+  - south
+  place_id: place-haecl
+  route_type: '1'
+  station_id:
+  - '70024'
+  - '70025'
 HEATH STREET:
-- '70260'
-- place-hsmnl
-- '0'
+  direction_type:
+  - east
+  - west
+  place_id: place-hsmnl
+  route_type: '0'
+  station_id: '70260'
 HYNES CONVENTION CENTER:
-- '70152'
-- place-hymnl
-- '0'
-- '70153'
+  direction_type:
+  - east
+  - west
+  place_id: place-hymnl
+  route_type: '0'
+  station_id:
+  - '70152'
+  - '70153'
 JACKSON SQUARE:
-- '70007'
-- place-jaksn
-- '1'
-- '70006'
+  direction_type:
+  - north
+  - south
+  place_id: place-jaksn
+  route_type: '1'
+  station_id:
+  - '70007'
+  - '70006'
 JFK/UMASS:
-- '70096'
-- place-jfk
-- '1'
-- '70086'
-- '70095'
-- '70085'
+  direction_type:
+  - north
+  - south
+  place_id: place-jfk
+  route_type: '1'
+  station_id:
+  - '70096'
+  - '70086'
+  - '70095'
+  - '70085'
 KENDALL/MIT:
-- '70072'
-- place-knncl
-- '1'
-- '70071'
+  direction_type:
+  - north
+  - south
+  place_id: place-knncl
+  route_type: '1'
+  station_id:
+  - '70072'
+  - '70071'
 KENMORE:
-- '70150'
-- place-kencl
-- '0'
-- '70151'
+  direction_type:
+  - east
+  - west
+  place_id: place-kencl
+  route_type: '0'
+  station_id:
+  - '70150'
+  - '70151'
 KENT STREET:
-- '70216'
-- place-kntst
-- '0'
-- '70215'
+  direction_type:
+  - east
+  - west
+  place_id: place-kntst
+  route_type: '0'
+  station_id:
+  - '70216'
+  - '70215'
 LECHMERE:
-- '70210'
-- place-lech
-- '0'
-- '70209'
+  direction_type:
+  - east
+  - west
+  place_id: place-lech
+  route_type: '0'
+  station_id:
+  - '70210'
+  - '70209'
 LONGWOOD:
-- '70183'
-- place-longw
-- '0'
-- '70182'
+  direction_type:
+  - east
+  - west
+  place_id: place-longw
+  route_type: '0'
+  station_id:
+  - '70183'
+  - '70182'
 LONGWOOD MEDICAL AREA:
-- '70247'
-- place-lngmd
-- '0'
-- '70248'
+  direction_type:
+  - east
+  - west
+  place_id: place-lngmd
+  route_type: '0'
+  station_id:
+  - '70247'
+  - '70248'
 MALDEN CENTER:
-- '70035'
-- place-mlmnl
-- '1'
-- '70034'
+  direction_type:
+  - north
+  - south
+  place_id: place-mlmnl
+  route_type: '1'
+  station_id:
+  - '70035'
+  - '70034'
 MASSACHUSETTS AVENUE:
-- '70013'
-- place-masta
-- '1'
-- '70012'
+  direction_type:
+  - north
+  - south
+  place_id: place-masta
+  route_type: '1'
+  station_id:
+  - '70013'
+  - '70012'
 MATTAPAN:
-- '70275'
-- place-matt
-- '0'
-- '70276'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-matt
+  route_type: '0'
+  station_id:
+  - '70275'
+  - '70276'
 MAVERICK:
-- '70045'
-- place-mvbcl
-- '1'
-- '70046'
+  direction_type:
+  - east
+  - west
+  place_id: place-mvbcl
+  route_type: '1'
+  station_id:
+  - '70045'
+  - '70046'
 MILTON:
-- '70267'
-- place-miltt
-- '0'
-- '70268'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-miltt
+  route_type: '0'
+  station_id:
+  - '70267'
+  - '70268'
 MISSION PARK:
-- '70254'
-- place-mispk
-- '0'
-- '70253'
+  direction_type:
+  - east
+  - west
+  place_id: place-mispk
+  route_type: '0'
+  station_id:
+  - '70254'
+  - '70253'
 MUSEUM OF FINE ARTS:
-- '70245'
-- place-mfa
-- '0'
-- '70246'
+  direction_type:
+  - east
+  - west
+  place_id: place-mfa
+  route_type: '0'
+  station_id:
+  - '70245'
+  - '70246'
 NEWTON CENTRE:
-- '70170'
-- place-newto
-- '0'
-- '70171'
+  direction_type:
+  - east
+  - west
+  place_id: place-newto
+  route_type: '0'
+  station_id:
+  - '70170'
+  - '70171'
 NEWTON HIGHLANDS:
-- '70168'
-- place-newtn
-- '0'
-- '70169'
+  direction_type:
+  - east
+  - west
+  place_id: place-newtn
+  route_type: '0'
+  station_id:
+  - '70168'
+  - '70169'
 NORTH QUINCY:
-- '70098'
-- place-nqncy
-- '1'
-- '70097'
+  direction_type:
+  - north
+  - south
+  place_id: place-nqncy
+  route_type: '1'
+  station_id:
+  - '70098'
+  - '70097'
 NORTH STATION:
-- '70027'
-- place-north
-- '1'
-- '70026'
+  direction_type:
+  - north
+  - south
+  place_id: place-north
+  route_type: '1'
+  station_id:
+  - '70027'
+  - '70026'
 NORTHEASTERN UNIVERSITY:
-- '70244'
-- place-nuniv
-- '0'
-- '70243'
+  direction_type:
+  - east
+  - west
+  place_id: place-nuniv
+  route_type: '0'
+  station_id:
+  - '70244'
+  - '70243'
 OAK GROVE:
-- '70036'
-- place-ogmnl
-- '1'
+  direction_type:
+  - north
+  - south
+  place_id: place-ogmnl
+  route_type: '1'
+  station_id: '70036'
 ORIENT HEIGHTS:
-- '70051'
-- place-orhte
-- '1'
-- '70052'
+  direction_type:
+  - east
+  - west
+  place_id: place-orhte
+  route_type: '1'
+  station_id:
+  - '70051'
+  - '70052'
 PACKARDS CORNER:
-- '70135'
-- place-brico
-- '0'
-- '70134'
+  direction_type:
+  - east
+  - west
+  place_id: place-brico
+  route_type: '0'
+  station_id:
+  - '70135'
+  - '70134'
 PARK STREET:
-- '70076'
-- place-pktrm
-- '1'
-- '70075'
+  direction_type:
+  - north
+  - south
+  place_id: place-pktrm
+  route_type: '1'
+  station_id:
+  - '70076'
+  - '70075'
 PLEASANT STREET:
-- '70139'
-- place-plsgr
-- '0'
-- '70138'
+  direction_type:
+  - east
+  - west
+  place_id: place-plsgr
+  route_type: '0'
+  station_id:
+  - '70139'
+  - '70138'
 PORTER:
-- '70066'
-- place-portr
-- '1'
-- '70065'
+  direction_type:
+  - north
+  - south
+  place_id: place-portr
+  route_type: '1'
+  station_id:
+  - '70066'
+  - '70065'
 PRUDENTIAL:
-- '70240'
-- place-prmnl
-- '0'
-- '70239'
+  direction_type:
+  - east
+  - west
+  place_id: place-prmnl
+  route_type: '0'
+  station_id:
+  - '70240'
+  - '70239'
 QUINCY ADAMS:
-- '70104'
-- place-qamnl
-- '1'
-- '70103'
+  direction_type:
+  - north
+  - south
+  place_id: place-qamnl
+  route_type: '1'
+  station_id:
+  - '70104'
+  - '70103'
 QUINCY CENTER:
-- '70102'
-- place-qnctr
-- '1'
-- '70101'
+  direction_type:
+  - north
+  - south
+  place_id: place-qnctr
+  route_type: '1'
+  station_id:
+  - '70102'
+  - '70101'
 RESERVOIR:
-- '70175'
-- place-rsmnl
-- '0'
-- '70174'
+  direction_type:
+  - east
+  - west
+  place_id: place-rsmnl
+  route_type: '0'
+  station_id:
+  - '70175'
+  - '70174'
 REVERE BEACH:
-- '70057'
-- place-rbmnl
-- '1'
-- '70058'
+  direction_type:
+  - east
+  - west
+  place_id: place-rbmnl
+  route_type: '1'
+  station_id:
+  - '70057'
+  - '70058'
 RIVERSIDE:
-- '70160'
-- place-river
-- '0'
-- '70161'
+  direction_type:
+  - east
+  - west
+  place_id: place-river
+  route_type: '0'
+  station_id:
+  - '70160'
+  - '70161'
 RIVERWAY:
-- '70255'
-- place-rvrwy
-- '0'
-- '70256'
+  direction_type:
+  - east
+  - west
+  place_id: place-rvrwy
+  route_type: '0'
+  station_id:
+  - '70255'
+  - '70256'
 ROXBURY CROSSING:
-- '70009'
-- place-rcmnl
-- '1'
-- '70008'
+  direction_type:
+  - north
+  - south
+  place_id: place-rcmnl
+  route_type: '1'
+  station_id:
+  - '70009'
+  - '70008'
 RUGGLES:
-- '70010'
-- place-rugg
-- '1'
-- '70011'
+  direction_type:
+  - north
+  - south
+  place_id: place-rugg
+  route_type: '1'
+  station_id:
+  - '70010'
+  - '70011'
 SAINT MARYS STREET:
-- '70211'
-- place-smary
-- '0'
-- '70212'
+  direction_type:
+  - east
+  - west
+  place_id: place-smary
+  route_type: '0'
+  station_id:
+  - '70211'
+  - '70212'
 SAINT PAUL STREET:
-- '70141'
-- place-stplb
-- '0'
-- '70140'
-- '70217'
-- '70218'
+  direction_type:
+  - east
+  - west
+  place_id: place-stplb
+  route_type: '0'
+  station_id:
+  - '70141'
+  - '70140'
+  - '70217'
+  - '70218'
 SAVIN HILL:
-- '70087'
-- place-shmnl
-- '1'
-- '70088'
+  direction_type:
+  - north
+  - south
+  place_id: place-shmnl
+  route_type: '1'
+  station_id:
+  - '70087'
+  - '70088'
 SCIENCE PARK:
-- '70207'
-- place-spmnl
-- '0'
-- '70208'
+  direction_type:
+  - east
+  - west
+  place_id: place-spmnl
+  route_type: '0'
+  station_id:
+  - '70207'
+  - '70208'
 SHAWMUT:
-- '70091'
-- place-smmnl
-- '1'
-- '70092'
+  direction_type:
+  - north
+  - south
+  place_id: place-smmnl
+  route_type: '1'
+  station_id:
+  - '70091'
+  - '70092'
 SOUTH STATION:
-- '70079'
-- place-sstat
-- '1'
-- '70080'
+  direction_type:
+  - north
+  - south
+  place_id: place-sstat
+  route_type: '1'
+  station_id:
+  - '70079'
+  - '70080'
 SOUTH STREET:
-- '70111'
-- place-sougr
-- '0'
-- '70110'
+  direction_type:
+  - east
+  - west
+  place_id: place-sougr
+  route_type: '0'
+  station_id:
+  - '70111'
+  - '70110'
 STATE STREET:
-- '70041'
-- place-state
-- '1'
-- '70042'
-- '70022'
-- '70023'
+  direction_type:
+  - east
+  - west
+  place_id: place-state
+  route_type: '1'
+  station_id:
+  - '70041'
+  - '70042'
+  - '70022'
+  - '70023'
 STONY BROOK:
-- '70005'
-- place-sbmnl
-- '1'
-- '70004'
+  direction_type:
+  - north
+  - south
+  place_id: place-sbmnl
+  route_type: '1'
+  station_id:
+  - '70005'
+  - '70004'
 SUFFOLK DOWNS:
-- '70054'
-- place-sdmnl
-- '1'
-- '70053'
+  direction_type:
+  - east
+  - west
+  place_id: place-sdmnl
+  route_type: '1'
+  station_id:
+  - '70054'
+  - '70053'
 SULLIVAN SQUARE:
-- '70030'
-- place-sull
-- '1'
-- '70031'
+  direction_type:
+  - north
+  - south
+  place_id: place-sull
+  route_type: '1'
+  station_id:
+  - '70030'
+  - '70031'
 SUMMIT AVENUE:
-- '70223'
-- place-sumav
-- '0'
-- '70224'
+  direction_type:
+  - east
+  - west
+  place_id: place-sumav
+  route_type: '0'
+  station_id:
+  - '70223'
+  - '70224'
 SUTHERLAND ROAD:
-- '70117'
-- place-sthld
-- '0'
-- '70116'
+  direction_type:
+  - east
+  - west
+  place_id: place-sthld
+  route_type: '0'
+  station_id:
+  - '70117'
+  - '70116'
 SYMPHONY:
-- '70242'
-- place-symcl
-- '0'
-- '70241'
+  direction_type:
+  - east
+  - west
+  place_id: place-symcl
+  route_type: '0'
+  station_id:
+  - '70242'
+  - '70241'
 TAPPAN STREET:
-- '70232'
-- place-tapst
-- '0'
-- '70231'
+  direction_type:
+  - east
+  - west
+  place_id: place-tapst
+  route_type: '0'
+  station_id:
+  - '70232'
+  - '70231'
 TUFTS MEDICAL CENTER:
-- '70017'
-- place-tumnl
-- '1'
-- '70016'
+  direction_type:
+  - north
+  - south
+  place_id: place-tumnl
+  route_type: '1'
+  station_id:
+  - '70017'
+  - '70016'
 VALLEY ROAD:
-- '70271'
-- place-valrd
-- '0'
-- '70272'
+  direction_type:
+  - inbound
+  - outbound
+  place_id: place-valrd
+  route_type: '0'
+  station_id:
+  - '70271'
+  - '70272'
 WABAN:
-- '70164'
-- place-waban
-- '0'
-- '70165'
+  direction_type:
+  - east
+  - west
+  place_id: place-waban
+  route_type: '0'
+  station_id:
+  - '70164'
+  - '70165'
 WARREN STREET:
-- '70124'
-- place-wrnst
-- '0'
-- '70125'
+  direction_type:
+  - east
+  - west
+  place_id: place-wrnst
+  route_type: '0'
+  station_id:
+  - '70124'
+  - '70125'
 WASHINGTON SQUARE:
-- '70229'
-- place-bcnwa
-- '0'
-- '70230'
+  direction_type:
+  - east
+  - west
+  place_id: place-bcnwa
+  route_type: '0'
+  station_id:
+  - '70229'
+  - '70230'
 WASHINGTON STREET:
-- '70121'
-- place-wascm
-- '0'
-- '70120'
+  direction_type:
+  - east
+  - west
+  place_id: place-wascm
+  route_type: '0'
+  station_id:
+  - '70121'
+  - '70120'
 WELLINGTON:
-- '70032'
-- place-welln
-- '1'
-- '70033'
+  direction_type:
+  - north
+  - south
+  place_id: place-welln
+  route_type: '1'
+  station_id:
+  - '70032'
+  - '70033'
 WONDERLAND:
-- '70059'
-- place-wondl
-- '1'
-- '70060'
+  direction_type:
+  - east
+  - west
+  place_id: place-wondl
+  route_type: '1'
+  station_id:
+  - '70059'
+  - '70060'
 WOOD ISLAND:
-- '70050'
-- place-wimnl
-- '1'
-- '70049'
+  direction_type:
+  - east
+  - west
+  place_id: place-wimnl
+  route_type: '1'
+  station_id:
+  - '70050'
+  - '70049'
 WOODLAND:
-- '70162'
-- place-woodl
-- '0'
-- '70163'
+  direction_type:
+  - east
+  - west
+  place_id: place-woodl
+  route_type: '0'
+  station_id:
+  - '70162'
+  - '70163'

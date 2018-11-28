@@ -2,7 +2,7 @@ import re, requests, json, yaml
 from datetime import datetime
 from services.helpers import consts
 
-train_ids = yaml.load(open('services/translations/t_station_ids.yml'))
+train_info = yaml.load(open('services/translations/t_station_ids.yml'))
 direction_translations = yaml.load(open('services/translations/direction_translations.yml'))
 
 def translate_time(departure_time):
@@ -42,27 +42,27 @@ def get_mins_or_sec(time_until_departure):
         return ""
 
 
-def get_predicted_train_departure(station_name, direction):
+def get_predicted_train_departure(station_name, requested_direction):
+    translated_station_name = station_name.upper()
     # Do a check if the station id is not there
-    station_id = train_ids[station_name.upper()][1]
-    route_type = train_ids[station_name.upper()][2]
+    station_id = train_info[translated_station_name]['place_id']
+    route_type = train_info[translated_station_name]['route_type']
+    valid_directions_for_station = train_info[translated_station_name]['direction_type']
+
+    # The station doesn't go in the direction the user has requested so we'll ask a for a valid one
+    if requested_direction not in valid_directions_for_station:
+        return False, valid_directions_for_station
 
     #### NEED TO DO ERROR CHECKING ON DIRECTIONS ####
-    translated_direction = direction_translations[direction.upper()]
+    translated_direction = direction_translations[requested_direction.upper()]
     prediction_endpoint = consts.MBTAENDPOINT.format(
         '/predictions?filter%5Bstop%5D=' + station_id + '&filter%5Bdirection_id%5D='
                                 + translated_direction + '&include=stop,trip&filter[route_type]=' + route_type)
     r = requests.get(prediction_endpoint, data=consts.KEY)
     res = json.loads(r.text)
-    return res['data']
+    return True, res['data']
 
 
 def is_plural(num):
     return num > 1
-
-'''
-    TODO
-'''
-def is_valid_direction():
-    return True
 

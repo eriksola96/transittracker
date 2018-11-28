@@ -39,9 +39,16 @@ def get_alerts(color):
 
 @ask.intent('GetTrainPredictionIntent', convert={'station_name': 'station_name', 'direction': 'direction'})
 def get_train_prediction(station_name, direction):
-    prediction_data = prediction_helper.get_predicted_train_departure(station_name, direction)
+    is_valid, prediction_data = prediction_helper.get_predicted_train_departure(station_name, direction)
+
+    # Invalid request reprompt
+    if not is_valid:
+        invalid_request_prompt = render_template('invalid_direction', station=station_name, requested_direction=direction,
+                                                    valid_directions=prediction_data)
+        return statement(invalid_request_prompt)
+
     if len(prediction_data) == 0:
-        speech_output = "Sorry, I can't seems to get any predictions for %s" % station_name
+        speech_output = "Sorry, I can't seem to get any predictions for %s" % station_name
         return helper.get_speech_text(speech_output)
     elif len(prediction_data) == 1:
         time_until_departure = prediction_helper.translate_time(prediction_data[0]['attributes']['departure_time'])
@@ -53,7 +60,7 @@ def get_train_prediction(station_name, direction):
         first_mins_or_sec = prediction_helper.get_mins_or_sec(first_time_until_departure)
         second_mins_or_sec = prediction_helper.get_mins_or_sec(second_time_until_departure)
 
-        first_train = "The next train headed %s from %s is leaving in %s from now." % (direction, station_name, first_mins_or_sec)
+        first_train = "The next train predicted to head %s from %s is leaving in %s from now." % (direction, station_name, first_mins_or_sec)
         second_train = " The train after that leaves in %s" % second_mins_or_sec
         speech_output = first_train + second_train
         return helper.get_speech_text(speech_output)
