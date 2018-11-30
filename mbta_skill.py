@@ -21,7 +21,7 @@ def launch():
 
 
 @ask.intent('GetAlertForStationIntent', convert={'station_name': 'station_name'})
-def get_alerts(station_name):
+def get_alerts_for_station(station_name):
     alerts_data = alerts_helper.get_alerts_present_for_station(station_name)
     if len(alerts_data) == 1:
         cause = alerts_data[0]['attributes']['cause']
@@ -41,7 +41,7 @@ def get_alerts(station_name):
 def get_train_prediction(station_name, direction):
     is_valid, prediction_data = prediction_helper.get_predicted_train_departure(station_name, direction)
 
-    # Invalid request reprompt
+    # Invalid request prompt
     if not is_valid:
         invalid_request_prompt = render_template('invalid_direction', station=station_name, requested_direction=direction,
                                                     valid_directions=prediction_data)
