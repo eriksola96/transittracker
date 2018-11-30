@@ -37,6 +37,11 @@ def get_alerts_for_station(station_name):
         return statement('<speak>{}</speak>'.format(speech_output))
 
 
+@ask.intent('AlertForTripIntent', convert={'from_station': 'from_station', 'to_station': 'to_station'})
+def get_alerts_for_trip(from_station, to_station):
+    speech_output = alerts_helper.get_alerts_in_between_stops(from_station, to_station)
+    return statement('<speak>{}</speak>'.format(speech_output))
+
 @ask.intent('GetTrainPredictionIntent', convert={'station_name': 'station_name', 'direction': 'direction'})
 def get_train_prediction(station_name, direction):
     is_valid, prediction_data = prediction_helper.get_predicted_train_departure(station_name, direction)

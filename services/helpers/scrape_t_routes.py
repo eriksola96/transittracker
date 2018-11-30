@@ -16,14 +16,12 @@ def parse_station_routes(route_type, lines):
         list_of_stations_in_line = []
         alerts_endpoint = MBTAENDPOINT.format('stops/?filter[type]=' + route_type +
                                           '&filter[route]=' + line)
-
         r = requests.get(alerts_endpoint, data=KEY)
         all_t_stations = json.loads(r.text)['data']
-
         # Dictionary of Line Name, and a list of all Stations in its route
         for station in all_t_stations:
-            station_name = station['attributes']['name']
-            list_of_stations_in_line.append(station_name)
+            station_name = station['attributes']['name'].upper()
+            list_of_stations_in_line.insert(0, station_name)
 
         t_names_and_routes[line] = list_of_stations_in_line
 
@@ -36,7 +34,6 @@ def write_to_yml(parsed_data):
 
 heavy_rails = ['Orange', 'Red', 'Blue']
 light_rails = ['Mattapan', 'Green-B', 'Green-C', 'Green-D', 'Green-E']
-
 
 light = parse_station_routes(LIGHT_RAIL, light_rails)
 heavy = parse_station_routes(HEAVY_RAIL, heavy_rails)

@@ -314,6 +314,16 @@ CHARLES:
   - '70074'
   - '70073'
   station_line: Red
+CHARLES/MGH:
+  direction_type:
+  - north
+  - south
+  place_id: place-chmnl
+  route_type: '1'
+  station_id:
+  - '70074'
+  - '70073'
+  station_line: Red
 CHESTNUT HILL:
   direction_type:
   - east
@@ -604,7 +614,29 @@ JFK:
   - '70095'
   - '70085'
   station_line: Red
+JFK/UMASS:
+  direction_type:
+  - north
+  - south
+  place_id: place-jfk
+  route_type: '1'
+  station_id:
+  - '70096'
+  - '70086'
+  - '70095'
+  - '70085'
+  station_line: Red
 KENDALL:
+  direction_type:
+  - north
+  - south
+  place_id: place-knncl
+  route_type: '1'
+  station_id:
+  - '70072'
+  - '70071'
+  station_line: Red
+KENDALL/MIT:
   direction_type:
   - north
   - south

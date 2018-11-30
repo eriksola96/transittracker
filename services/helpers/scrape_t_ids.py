@@ -1,7 +1,7 @@
 from config import config
 import requests, json
 import yaml, re
-
+import copy
 
 KEY = { 'api_key': config.api_key }
 MBTAENDPOINT = 'https://api-v3.mbta.com/{}'
@@ -59,12 +59,13 @@ def parse_name_and_ids(route_type):
     t_names_and_ids = {}
     for station in all_t_stations:
         # Strange case where / in name JFK/UMASS we have to duplicate the entry
-        duplicate_entry_station_name = ''
+        first_half = ''
+        second_half = ''
         station_name = station['attributes']['name'].upper()
         duplicate_entry = True if '/' in station_name else False
         if duplicate_entry:
-            station_name = station['attributes']['name'].upper().split('/')[0]
-            duplicate_entry_station_name = station['attributes']['name'].upper().split('/')[1]
+            first_half = station['attributes']['name'].upper().split('/')[0]
+            second_half = station['attributes']['name'].upper().split('/')[1]
 
         station_line, station_direction = get_train_direction_type(station['attributes']['description'])
         station_id = station['id']
@@ -78,10 +79,9 @@ def parse_name_and_ids(route_type):
             t_names_and_ids[station_name] = station_info
 
             if duplicate_entry:
-                duplicated_directions   = station_info[DIRECTION_TYPE].copy()
-                duplicated_station_info = station_info.copy()
-                duplicated_station_info[DIRECTION_TYPE] = duplicated_directions
-                t_names_and_ids[duplicate_entry_station_name] = duplicated_station_info
+                t_names_and_ids[first_half] = copy.deepcopy(station_info)
+                t_names_and_ids[second_half] = copy.deepcopy(station_info)
+
         else:
             if isinstance(t_names_and_ids[station_name][STATION_ID], list):
                 new_list_of_station_ids = t_names_and_ids[station_name][STATION_ID]
@@ -89,16 +89,16 @@ def parse_name_and_ids(route_type):
                 t_names_and_ids[station_name][STATION_ID] = new_list_of_station_ids
 
                 if duplicate_entry:
-                    t_names_and_ids[duplicate_entry_station_name][STATION_ID] = new_list_of_station_ids.copy()
+                    t_names_and_ids[first_half][STATION_ID] = copy.deepcopy(new_list_of_station_ids)
+                    t_names_and_ids[second_half][STATION_ID] = new_list_of_station_ids.copy()
             else:
                 list_of_station_ids = [t_names_and_ids[station_name][STATION_ID]]
                 list_of_station_ids.append(station_id)
                 t_names_and_ids[station_name][STATION_ID] = list_of_station_ids
 
                 if duplicate_entry:
-                    duplicate_list_of_station_ids = [t_names_and_ids[duplicate_entry_station_name][STATION_ID]]
-                    duplicate_list_of_station_ids.append(station_id)
-                    t_names_and_ids[duplicate_entry_station_name][STATION_ID] = duplicate_list_of_station_ids
+                    t_names_and_ids[first_half][STATION_ID] = copy.deepcopy(list_of_station_ids)
+                    t_names_and_ids[second_half][STATION_ID] = copy.deepcopy(list_of_station_ids)
     return t_names_and_ids
 
 
